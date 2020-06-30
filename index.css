@@ -39,7 +39,7 @@ main section p {
   color: #6d7f97;
 }
 main section:nth-child(1) {
-  background-image: url(file:///home/eka/Documents/Courses/Frontendmentor/article-preview-component-master/images/drawers.jpg);
+  background-image: url(./images/drawers.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px 0 0 10px;
