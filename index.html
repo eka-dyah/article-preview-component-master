@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <main>
+        <section>
+        </section>
+        <section>
+            <div class="text-contaner">
+                <h3>
+                    Shift the overall look and feel by adding these wonderful touches to
+                    furniture in your home
+                </h3>
+                <p>
+                    Ever been in a room and felt like something was missing? Perhaps it
+                    felt slightly bare and uninviting. I’ve got some simple tips to help
+                    you make any room feel complete.
+                </p>
+            </div>
+            <div class="card-bottom-container">
+                <div class="avatar">
+                    <img src="./images/avatar-michelle.jpg" alt="" />
+                    <div>
+                        <h5>Michelle Appleton</h5>
+                        <p>28 Jun 2020</p>
+                    </div>
+                </div>
+                <div class="share-icon-container">
+                    <img src="./images/icon-share.svg" alt="" id="share-button" />
+                    <div id="share-ballon" class="share">
+                        <p>SHARE</p>
+                        <img src="./images/icon-facebook.svg" alt="" />
+                        <img src="./images/icon-twitter.svg" alt="" />
+                        <img src="./images/icon-pinterest.svg" alt="" />
+                        <div class="ballon"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor</a>. Coded by <a href="#">Dyah Eka Lestari</a>.
+    </div>
+
+    <script>
+        const shareBtn = document.querySelector('#share-button');
+        shareBtn.addEventListener('click', function() {
+            document.querySelector('#share-ballon').style.display = 'flex';
+        });
+
+        document.querySelector('#share-ballon').addEventListener('click', function() {
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
